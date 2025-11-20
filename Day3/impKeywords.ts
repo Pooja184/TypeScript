@@ -21,3 +21,18 @@ myUser.email = "pooja@gmail.com";
 
 // Trying to update a readonly property will give an error
 // myUser._id = "1244";  // ❌ Not allowed because _id is readonly
+
+
+type CardNumber = {
+  cardNumber: string;
+};
+
+type CardDate = {
+  cardDate: string;
+};
+
+// Using '&' (intersection) to combine multiple types into one
+// cardDetails will have: cardnumber, carddate, and cvv
+type CardDetails = CardNumber & CardDate & {
+  cvv: number;
+};
