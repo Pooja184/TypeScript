@@ -99,6 +99,6 @@ const cfg:Config={
     version:1
 }
 
-// cfg.appName="jfbwjk"  error because appName is readonly
+// cfg.appName="jfbwjk"  error because appName is readonly.
 
 
